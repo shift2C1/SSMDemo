@@ -58,6 +58,7 @@
   </dependencies>
 
   <build>
+    <!--如果mapper.xml不在resource下，而是在java同级代码下需要配置mapper.xml的文件位置-->
     <resources>
       <resource>
         <directory>src/main/java</directory>
