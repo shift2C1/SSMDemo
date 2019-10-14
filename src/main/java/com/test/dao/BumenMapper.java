@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
-public interface bumenMapper {
+public interface BumenMapper {
 
     public Bumen getBumenById(String id);
 }

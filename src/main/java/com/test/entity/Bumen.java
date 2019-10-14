@@ -20,4 +20,12 @@ public class Bumen {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Bumen{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

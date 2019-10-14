@@ -58,11 +58,14 @@
   </dependencies>
 
   <build>
-    <!--<resources>-->
-      <!--<resource>-->
-        <!---->
-      <!--</resource>-->
-    <!--</resources>-->
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
     <finalName>SSMDemo</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>

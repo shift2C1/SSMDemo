@@ -8,11 +8,15 @@
         <!--jdbc驱动包-->
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
         <!--数据库地址-->
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/testdb"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC"></property>
         <!--数据库用户名-->
         <property name="user" value="root"></property>
         <!--数据库密码-->
         <property name="password" value="2437262431"></property>
+
+        <!--配置数据源连接个数-->
+        <property name="initialPoolSize" value="5"></property>
+        <property name="maxPoolSize" value="10"></property>
     </bean>
     <!--配置sqlSessionFactoryBean-->
     <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
